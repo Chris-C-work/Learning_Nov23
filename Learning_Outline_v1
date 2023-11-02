@@ -1,0 +1,23 @@
+Chris Learning
+    Containerisation (Docker, Singularity/Apptainer)
+        https://docker-curriculum.com/ (Docker introduction)
+        https://www.fromlatest.io/#/ (dockerfile analyser - well worth putting your definition files in here once you've got to grips with Docker as it helps to understand how to optimise them)
+        https://apptainer.org/docs/user/main/quick_start.html (Singularity introduction - a bit less nice but once you understand Docker this page should be fine to translate that understanding to Singularity!)
+
+    Relational Database (PostgreSQL)
+        https://www.postgresqltutorial.com/ (go through sections 1-15 using a local installation of PostgreSQL)
+        https://www.postgresqltutorial.com/postgresql-indexes/ (a follow on section on indexing specifically)
+
+    Graph Databases (ArangoDB)
+        https://university.arangodb.com/courses/graph-course-for-beginners/ (basics of graph databases)
+        https://university.arangodb.com/courses/aql-fundamentals/ (digging into the query language)
+        https://university.arangodb.com/courses/python-driver-tutorial/ (specifics of the Python driver)
+
+    Front-end (FastAPI, Gin)
+        https://fastapi.tiangolo.com/tutorial/ (FastAPI introduction)
+        https://masteringbackend.com/posts/gin-framework#the-framework
+
+    Workflow Engineering (apache airflow, nextflow)
+
+
+    Profiling and Optimisation (???)
