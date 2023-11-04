@@ -1,6 +1,9 @@
 ### CI/CD
 Link: What Are CI/CD and the CI/CD Pipeline? (https://www.ibm.com/blog/ci-cd-pipeline/)
 
+### Javascript
+Creating a website: HTML (Content, Images), CSS (Appearance), Javascript (Interaction)
+
 ### Kernel and OS
 https://www.quora.com/What-is-the-difference-between-a-kernel-and-an-operating-system
 
@@ -78,6 +81,28 @@ root@c78446195a12:/#
 docker run -p5000:5432 postgres:9.6
 docker run -p5001:5432 postgres
 ```
- - docker start: restart the container 
+ - docker start: restart the container instead of interacting with image 
+ - docker run: create a new container for image 
   
-  
+### General Concept
+- Class: It is a blueprint for creating instance
+- Instance: It contains data which is unique to each instance
+   
+    *Notes: The first argument of a method in class should be instance itself, which is named **self** conventionally. Eg.*
+    ```Python
+    class Employee():
+        def __init__(self, first, last):
+            self.first = first
+            self.last = last
+        
+        def fullName(self):
+            return ('{}{}'.format(self.first,self.last))
+    
+    emp_1 = Employee('Test','User')
+     
+     # Equivalent
+     
+     # Parentheses for indicating the method 
+    print(emp_1.fullName())
+    print(Employee.fullName(emp_1))
+    ```
