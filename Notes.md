@@ -39,7 +39,7 @@ Container: Layers of images, eg. Base image alpine (small in size) ... applicati
 
 Registry: A Docker registry stores Docker **images**.
 
-
+Docker Network: Networking is about communicating among processes, and Docker's networking is primarily used to establish the communication between containers and outside world via host machine where the docker daemon is running.   
 
 [4]: https://docs.docker.com/get-started/overview/
 
@@ -84,7 +84,7 @@ docker run -p5001:5432 postgres
  - docker start: restart the container instead of interacting with image 
  - docker run: create a new container for image 
   
-### General Concept
+### General Coding Concept
 - Class: It is a blueprint for creating instance
 - Instance: It contains data which is unique to each instance
    
@@ -101,8 +101,19 @@ docker run -p5001:5432 postgres
     emp_1 = Employee('Test','User')
      
      # Equivalent
-     
+
      # Parentheses for indicating the method 
     print(emp_1.fullName())
     print(Employee.fullName(emp_1))
     ```
+
+### Proxy
+- Forward Proxy (Regulating the traffic going out of network):
+    - Hide the identity of client by masking their IP
+    - Increase the speed by caching copies of websites in its database
+- Reverse Proxy (Regulating the traffic going into the network)[6]
+    -  Increase the security by hiding the IP addresses of a server
+
+[6]:https://www.youtube.com/watch?v=RXXRguaHZs0
+  
+
