@@ -10,12 +10,13 @@ https://www.quora.com/What-is-the-difference-between-a-kernel-and-an-operating-s
 ### Summary of differences: container vs. virtual machine [1]
 
 | Characteristic| Container| Virtual machine|
-| :---        |    :----:   |      ---: |
+| :---        |    :----   |      :--- |
 | Definition  |    Software code package containing an application’s code, its libraries, and other dependencies that make up the application running environment.|Digital replica of a physical machine. Partitions the physical hardware into multiple environments. |
 | Virtualization [2]    | Virtualizes the operating system.       | Virtualizes the underlying physical infrastructure.   |
 | Encapsulation   | Software layer above the operating system required for running the application or application component.        | Operating system, all software layers above it, multiple applications.      |
 
-[1]:(https://aws.amazon.com/compare/the-difference-between-containers-and-virtual-machines/)
+[1]:(https://aws.amazon.com/compare/the-difference-between-containers-and-virtual-machines/).https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms 
+
 
 [2]: https://www.redhat.com/en/topics/virtualization/what-is-virtualization
 
@@ -84,6 +85,12 @@ docker run -p5001:5432 postgres
  - docker start: restart the container instead of interacting with image 
  - docker run: create a new container for image 
   
+### Docker Compose
+It is a tool that helps to define and share (the network eg. mongodb and mongodb-express example) multi-container applications. Using Compose, you can create a YAML file to define the services, including port, network, environment and the such.
+
+### Docker Volume 
+The changes of the file in container are lost when you remove the container and Docker isolates all changes to that container. Volumes allows for the persistent memory since it connect specific filesystem paths of the container back to the host machine. If you mount a directory in the container, changes in that directory are also seen on the host machine.  
+  
 ### General Coding Concept
 - Class: It is a blueprint for creating instance
 - Instance: It contains data which is unique to each instance
@@ -117,3 +124,13 @@ docker run -p5001:5432 postgres
 [6]:https://www.youtube.com/watch?v=RXXRguaHZs0
   
 
+### Summary of differences: relational vs. non-relational  [7]
+
+| Characteristic| relational | non-relational |
+| :---        |    :----   |      :--- |
+| Definition  |    A relational database (or SQL database) stores data in tabular format with rows and columns.|Non-relational databases (or NoSQL databases) use a variety of data models for accessing and managing data |
+| Data model    | Tabular.       | Key-value, document, or graph.   |
+| Data type   | Structured   | Structured, semi-structured, and unstructured.      |
+
+
+[7]: https://aws.amazon.com/compare/the-difference-between-relational-and-non-relational-databases/
